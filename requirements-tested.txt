@@ -1,0 +1,9 @@
+# Exact core versions used for the clean repository rerun on 2026-09-16.
+numpy==2.5.3
+pandas==2.3.3
+scipy==1.18.1
+scikit-learn==1.9.1
+statsmodels==0.15.0
+matplotlib==3.11.2
+jupyterlab==4.6.3
+ipykernel==6.31.0

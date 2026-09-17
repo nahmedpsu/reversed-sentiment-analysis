@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software or its derived outputs, please cite the accompanying manuscript and this repository."
+title: "Reversed Sentiment Analysis: Research Code and Supplementary Results"
+type: software
+authors:
+  - family-names: Ahmad
+    given-names: Naveed
+    email: nahmed@psu.edu.sa
+repository-code: "https://github.com/nahmedpsu/reversed-sentiment-analysis"
+version: 0.1.0
+date-released: 2026-09-16
+license: MIT
+keywords:
+  - Arabic NLP
+  - financial news
+  - sentiment analysis
+  - Saudi stock market
+  - reproducible research
+

@@ -1,0 +1,636 @@
+{
+ "n_articles_rows": 10526,
+ "n_articles_unique": 6075,
+ "date_min": "2018-01-01",
+ "date_max": "2022-12-29",
+ "price_min": "2018-01-01",
+ "price_max": "2022-12-29",
+ "n_price_rows": 13726,
+ "mean_words": 281.19884096522895,
+ "pre_open_pct": 20.84362530875926,
+ "intraday_pct": 38.98916967509025,
+ "post_close_pct": 40.16720501615049,
+ "news_days_total": 7024,
+ "news_days_train": 5503,
+ "news_days_test": 1521,
+ "articles_by_year": {
+  "2018": 1830,
+  "2019": 2450,
+  "2020": 1756,
+  "2021": 2128,
+  "2022": 2362
+ },
+ "n_raw_tok": 2208303,
+ "raw_vocab": 114083,
+ "norm_tok": 2582130,
+ "norm_vocab": 36078,
+ "vocab_mindf": 13368,
+ "vocab_eq": 15206,
+ "contemporaneous_Equal-split (pooled)": {
+  "n": 1535,
+  "r": 0.09483279401343053,
+  "nw_t": 4.352169556966717,
+  "nw_p": 1.3479694690693761e-05,
+  "spearman": 0.06986808718525278,
+  "acc": 0.46840390879478827,
+  "bal_acc": 0.5080934143787091,
+  "auc": 0.5472496594588304,
+  "majority": 0.5446254071661237,
+  "pt_p": 0.08475568800037458
+ },
+ "contemporaneous_Ridge (firm)": {
+  "n": 1535,
+  "r": 0.1265117325255448,
+  "nw_t": 4.269770230323301,
+  "nw_p": 1.9567444280211047e-05,
+  "spearman": 0.09519572693973624,
+  "acc": 0.5283387622149837,
+  "bal_acc": 0.5429552470720305,
+  "auc": 0.5455435310867884,
+  "majority": 0.5446254071661237,
+  "pt_p": 0.00020043203712061253
+ },
+ "contemporaneous_Ridge (pooled)": {
+  "n": 1535,
+  "r": 0.3264334957614118,
+  "nw_t": 12.459535629022067,
+  "nw_p": 1.2409107167277763e-35,
+  "spearman": 0.3092488931015293,
+  "acc": 0.5843648208469056,
+  "bal_acc": 0.5965006400120473,
+  "auc": 0.6534112299867891,
+  "majority": 0.5446254071661237,
+  "pt_p": 3.3306690738754696e-15
+ },
+ "contemporaneous_ridge_pooled_firm_r_min": 0.18275336262279027,
+ "contemporaneous_ridge_pooled_firm_r_max": 0.5105443908786637,
+ "contemporaneous_ridge_pooled_firms_positive": 11,
+ "contemporaneous_ridge_pooled_firms_sig05": 11,
+ "predictive_Equal-split (pooled)": {
+  "n": 1521,
+  "r": 0.0797500143706953,
+  "nw_t": 3.4137143634700577,
+  "nw_p": 0.000640837230603949,
+  "spearman": 0.07274913586607032,
+  "acc": 0.4904667981591059,
+  "bal_acc": 0.5091210211385945,
+  "auc": 0.5376170660975196,
+  "majority": 0.5220249835634451,
+  "pt_p": 0.091088831694216
+ },
+ "predictive_Ridge (firm)": {
+  "n": 1521,
+  "r": 0.05483282861934127,
+  "nw_t": 2.0513973040717666,
+  "nw_p": 0.04022827138890702,
+  "spearman": 0.03892753843335751,
+  "acc": 0.4970414201183432,
+  "bal_acc": 0.5022443082402752,
+  "auc": 0.504237420266857,
+  "majority": 0.5220249835634451,
+  "pt_p": 0.4285644265118035
+ },
+ "predictive_Ridge (pooled)": {
+  "n": 1521,
+  "r": 0.11215865714080865,
+  "nw_t": 4.4632497288757165,
+  "nw_p": 8.072587531945053e-06,
+  "spearman": 0.11886766538584796,
+  "acc": 0.539776462853386,
+  "bal_acc": 0.5449173477837564,
+  "auc": 0.5498918990087278,
+  "majority": 0.5220249835634451,
+  "pt_p": 0.00016078051979051544
+ },
+ "predictive_ridge_pooled_firm_r_min": -0.005718506124876562,
+ "predictive_ridge_pooled_firm_r_max": 0.22821125427479036,
+ "predictive_ridge_pooled_firms_positive": 9,
+ "predictive_ridge_pooled_firms_sig05": 4,
+ "insample_eqsplit_r_min": 0.25442308322516377,
+ "insample_eqsplit_r_max": 0.5365202618809964,
+ "walkforward": [
+  {
+   "Alignment": "contemporaneous",
+   "TestYear": 2019,
+   "n": 1587,
+   "r": 0.11401437858718882,
+   "nw_t": 5.178782569952127,
+   "nw_p": 2.2333858860740897e-07,
+   "bal_acc": 0.5549622904894091,
+   "majority": 0.5374921235034656,
+   "pt_p": 3.725621073980001e-06
+  },
+  {
+   "Alignment": "contemporaneous",
+   "TestYear": 2020,
+   "n": 1226,
+   "r": 0.13570946886340632,
+   "nw_t": 4.5199707156469,
+   "nw_p": 6.18481859740085e-06,
+   "bal_acc": 0.5135360032535639,
+   "majority": 0.5367047308319739,
+   "pt_p": 0.1703218696826585
+  },
+  {
+   "Alignment": "contemporaneous",
+   "TestYear": 2021,
+   "n": 1460,
+   "r": 0.35061741722537904,
+   "nw_t": 12.652528245423255,
+   "nw_p": 1.0833168429555914e-36,
+   "bal_acc": 0.6194943701830443,
+   "majority": 0.5260273972602739,
+   "pt_p": 0.0
+  },
+  {
+   "Alignment": "contemporaneous",
+   "TestYear": 2022,
+   "n": 1535,
+   "r": 0.3264334957614118,
+   "nw_t": 12.459535629022067,
+   "nw_p": 1.2409107167277763e-35,
+   "bal_acc": 0.5965006400120473,
+   "majority": 0.5446254071661237,
+   "pt_p": 3.3306690738754696e-15
+  },
+  {
+   "Alignment": "predictive",
+   "TestYear": 2019,
+   "n": 1583,
+   "r": 0.008866866763365356,
+   "nw_t": 0.33096725555508094,
+   "nw_p": 0.740669219257166,
+   "bal_acc": 0.5252964141122036,
+   "majority": 0.540113708149084,
+   "pt_p": 0.02230139032038514
+  },
+  {
+   "Alignment": "predictive",
+   "TestYear": 2020,
+   "n": 1236,
+   "r": -0.002821581171662304,
+   "nw_t": -0.10432484129510007,
+   "nw_p": 0.9169115649699769,
+   "bal_acc": 0.4935629907335361,
+   "majority": 0.5121359223300971,
+   "pt_p": 0.6846365344557396
+  },
+  {
+   "Alignment": "predictive",
+   "TestYear": 2021,
+   "n": 1439,
+   "r": 0.0413988000793233,
+   "nw_t": 1.7396163289977895,
+   "nw_p": 0.08192641006132606,
+   "bal_acc": 0.5259879700178207,
+   "majority": 0.5121612230715775,
+   "pt_p": 0.02253586561540144
+  },
+  {
+   "Alignment": "predictive",
+   "TestYear": 2022,
+   "n": 1521,
+   "r": 0.11215865714080865,
+   "nw_t": 4.4632497288757165,
+   "nw_p": 8.072587531945053e-06,
+   "bal_acc": 0.5449173477837564,
+   "majority": 0.5220249835634451,
+   "pt_p": 0.00016078051979051544
+  }
+ ],
+ "placebo": [
+  {
+   "Alignment": "contemporaneous",
+   "Observed r": 0.3264334957614118,
+   "Placebo mean": 0.00027352374798223444,
+   "Placebo 2.5%": -0.08905064724071046,
+   "Placebo 97.5%": 0.06698997840695785,
+   "Placebo max": 0.06854225022153687,
+   "P(placebo >= observed)": 0.0,
+   "Permutations": 50
+  },
+  {
+   "Alignment": "predictive",
+   "Observed r": 0.11215865714080865,
+   "Placebo mean": 0.005348564760547866,
+   "Placebo 2.5%": -0.04579295571115759,
+   "Placebo 97.5%": 0.08158306740444082,
+   "Placebo max": 0.10148414923232849,
+   "P(placebo >= observed)": 0.0,
+   "Permutations": 50
+  }
+ ],
+ "timing": [
+  {
+   "n": 340,
+   "r": 0.058829460167932154,
+   "nw_t": 1.274464874477035,
+   "nw_p": 0.2024987134884898,
+   "spearman": 0.02437818111811797,
+   "acc": 0.5205882352941177,
+   "bal_acc": 0.5212118066369078,
+   "auc": 0.5354683553064121,
+   "majority": 0.5029411764705882,
+   "pt_p": 0.2114005125837084,
+   "Publication time": "pre-open"
+  },
+  {
+   "n": 618,
+   "r": 0.3863675283555359,
+   "nw_t": 9.3447525624528,
+   "nw_p": 9.210457808116477e-21,
+   "spearman": 0.3701774514798133,
+   "acc": 0.5857605177993528,
+   "bal_acc": 0.5963439993209981,
+   "auc": 0.6631673315226617,
+   "majority": 0.5566343042071198,
+   "pt_p": 6.846954889727641e-07,
+   "Publication time": "intraday"
+  },
+  {
+   "n": 958,
+   "r": 0.25973436117748533,
+   "nw_t": 8.199468971515477,
+   "nw_p": 2.4145123090032403e-16,
+   "spearman": 0.2551655912468215,
+   "acc": 0.5897703549060542,
+   "bal_acc": 0.602645991421973,
+   "auc": 0.6427669635983725,
+   "majority": 0.5480167014613778,
+   "pt_p": 3.2262970073304587e-11,
+   "Publication time": "post-close"
+  }
+ ],
+ "horizon": [
+  {
+   "Horizon": "session +0",
+   "r": 0.11215865714080865,
+   "nw_t": 4.4632497288757165,
+   "nw_p": 8.072587531945053e-06,
+   "n": 1521
+  },
+  {
+   "Horizon": "session +1",
+   "r": -0.031121089050592077,
+   "nw_t": -1.1389008807765808,
+   "nw_p": 0.2547444982258277,
+   "n": 1513
+  },
+  {
+   "Horizon": "session +2",
+   "r": -0.005175855546317262,
+   "nw_t": -0.17987877285740259,
+   "nw_p": 0.8572477401764865,
+   "n": 1505
+  },
+  {
+   "Horizon": "session +3",
+   "r": -0.04092087195362608,
+   "nw_t": -1.5830204375162993,
+   "nw_p": 0.11341680623090745,
+   "n": 1498
+  },
+  {
+   "Horizon": "session +4",
+   "r": -0.013345885788389855,
+   "nw_t": -0.489441597385676,
+   "nw_p": 0.6245290923830036,
+   "n": 1491
+  },
+  {
+   "Horizon": "session +5",
+   "r": -0.05828461140931848,
+   "nw_t": -2.1940155852141943,
+   "nw_p": 0.028234289140717572,
+   "n": 1482
+  },
+  {
+   "Horizon": "session +6",
+   "r": 0.01531277974647592,
+   "nw_t": 0.5656386343594856,
+   "nw_p": 0.5716394588752588,
+   "n": 1473
+  },
+  {
+   "Horizon": "session +7",
+   "r": 0.01693052784041257,
+   "nw_t": 0.6456240068539264,
+   "nw_p": 0.5185228861047535,
+   "n": 1465
+  },
+  {
+   "Horizon": "session +8",
+   "r": 0.022238512078572813,
+   "nw_t": 0.8977073477209412,
+   "nw_p": 0.36934159114904597,
+   "n": 1455
+  },
+  {
+   "Horizon": "session +9",
+   "r": 0.031202647957660617,
+   "nw_t": 1.2471893446231364,
+   "nw_p": 0.21232807897057915,
+   "n": 1448
+  },
+  {
+   "Horizon": "session +10",
+   "r": 0.008988587741416544,
+   "nw_t": 0.32729862509283103,
+   "nw_p": 0.7434420322408558,
+   "n": 1439
+  },
+  {
+   "Horizon": "cumulative +1..+2",
+   "r": -0.025289666872038947,
+   "nw_t": -0.8735510288406995,
+   "nw_p": 0.38236280511913767,
+   "n": 1505
+  },
+  {
+   "Horizon": "cumulative +1..+3",
+   "r": -0.04505750442454949,
+   "nw_t": -1.456013794479439,
+   "nw_p": 0.145388806294307,
+   "n": 1498
+  },
+  {
+   "Horizon": "cumulative +1..+5",
+   "r": -0.0658883863859294,
+   "nw_t": -2.036961165746441,
+   "nw_p": 0.04165393378499378,
+   "n": 1482
+  },
+  {
+   "Horizon": "cumulative +1..+10",
+   "r": -0.019114286998011744,
+   "nw_t": -0.5731092163107049,
+   "nw_p": 0.5665707473735915,
+   "n": 1439
+  }
+ ],
+ "benchmarks": [
+  {
+   "Model": "B0 Majority direction of training window",
+   "acc": 0.47928994082840237,
+   "bal_acc": 0.5,
+   "r": null,
+   "auc": 0.5,
+   "nw_t": null,
+   "pt_p": null
+  },
+  {
+   "Model": "B1 Random with training class prior (1,000 draws, mean)",
+   "acc": 0.4784950690335306,
+   "bal_acc": 0.5,
+   "r": null,
+   "auc": 0.5,
+   "nw_t": null,
+   "pt_p": null
+  },
+  {
+   "Model": "B2 AR(5) on lagged returns",
+   "acc": 0.5128205128205128,
+   "bal_acc": 0.5167192735059023,
+   "r": 0.07098475374059354,
+   "auc": 0.519470305142766,
+   "nw_t": 1.9015366244185088,
+   "pt_p": null
+  },
+  {
+   "Model": "B3 Lagged returns + lagged volume change + lagged market proxy",
+   "acc": 0.5285996055226825,
+   "bal_acc": 0.5329352883905772,
+   "r": 0.08144718512728595,
+   "auc": 0.5380709516698485,
+   "nw_t": 2.560258098247169,
+   "pt_p": null
+  },
+  {
+   "Model": "Reversed lexicon (pooled ridge), pre-session information only",
+   "acc": 0.539776462853386,
+   "bal_acc": 0.5449173477837564,
+   "r": 0.11215865714080865,
+   "auc": 0.5498918990087278,
+   "nw_t": 4.4632497288757165,
+   "pt_p": 0.00016078051979051544
+  },
+  {
+   "Model": "B3 + reversed lexicon",
+   "acc": 0.5463510848126233,
+   "bal_acc": 0.547732477764804,
+   "r": 0.1243476115975021,
+   "auc": 0.5533679348899414,
+   "nw_t": 4.67355741437584,
+   "pt_p": null
+  }
+ ],
+ "incremental": {
+  "coef_lexicon": 0.9804271871189267,
+  "t_lexicon": 4.319226620964991,
+  "p_lexicon": 1.5657693442624925e-05,
+  "r2_controls": 0.01181603432722056,
+  "r2_with_lexicon": 0.023253960113732042,
+  "n": 1521
+ },
+ "oos_r2_lexicon": 0.013050837427300177,
+ "oos_r2_controls": 0.0065121716180081,
+ "reverse_direction": {
+  "F_p": 6.059556666415901e-11,
+  "r2": 0.07173716617256976
+ },
+ "robustness": [
+  {
+   "Variant": "Baseline: close-to-close return, all articles",
+   "n": 1535,
+   "r": 0.3264334957614118,
+   "nw_t": 12.459535629022067,
+   "bal_acc": 0.5965006400120473,
+   "majority": 0.5446254071661237
+  },
+  {
+   "Variant": "Open-to-close return instead of close-to-close",
+   "n": 1535,
+   "r": 0.2569156898376043,
+   "nw_t": 9.41018337171418,
+   "bal_acc": 0.5792510474860335,
+   "majority": 0.5830618892508144
+  },
+  {
+   "Variant": "Ridge penalty alpha = 1",
+   "n": 1535,
+   "r": 0.3099603575628886,
+   "nw_t": 12.389094817336089,
+   "bal_acc": 0.5966657768103443,
+   "majority": 0.5446254071661237
+  },
+  {
+   "Variant": "Ridge penalty alpha = 100",
+   "n": 1535,
+   "r": 0.1586804213872586,
+   "nw_t": 5.756523408932239,
+   "bal_acc": 0.5392683327515042,
+   "majority": 0.5446254071661237
+  },
+  {
+   "Variant": "Vocabulary threshold min_df = 20",
+   "n": 1535,
+   "r": 0.32656844400221596,
+   "nw_t": 12.738154682247682,
+   "bal_acc": 0.5947063816388416,
+   "majority": 0.5446254071661237
+  },
+  {
+   "Variant": "Market-wrap articles removed",
+   "n": 1373,
+   "r": 0.2500659209796756,
+   "nw_t": 9.382245557963504,
+   "bal_acc": 0.5838615964780561,
+   "majority": 0.5360524399126001
+  },
+  {
+   "Variant": "Explicit price-movement words removed",
+   "n": 1535,
+   "r": 0.14359945613064795,
+   "nw_t": 5.052729048463891,
+   "bal_acc": 0.5282135792074802,
+   "majority": 0.5446254071661237
+  },
+  {
+   "Variant": "Both removed",
+   "n": 1373,
+   "r": 0.11204376116714955,
+   "nw_t": 3.945107459048982,
+   "bal_acc": 0.51944726469183,
+   "majority": 0.5360524399126001
+  }
+ ],
+ "transfer": [
+  {
+   "CompanyID": 30,
+   "Company": "Saudi Telecom Co.",
+   "n_test": 159,
+   "Firm-specific lexicon r": -0.030632577377871176,
+   "Pooled lexicon r": 0.18275336262279027,
+   "Leave-one-firm-out lexicon r": 0.18511773164407927
+  },
+  {
+   "CompanyID": 32,
+   "Company": "Saudi Electricity Co.",
+   "n_test": 122,
+   "Firm-specific lexicon r": -0.026505421710039945,
+   "Pooled lexicon r": 0.20965754822937843,
+   "Leave-one-firm-out lexicon r": 0.21717113064806798
+  },
+  {
+   "CompanyID": 43,
+   "Company": "Al Rajhi Bank",
+   "n_test": 162,
+   "Firm-specific lexicon r": 0.24746316916265526,
+   "Pooled lexicon r": 0.37971942712507256,
+   "Leave-one-firm-out lexicon r": 0.35064027202073017
+  },
+  {
+   "CompanyID": 48,
+   "Company": "Saudi Awwal Bank",
+   "n_test": 172,
+   "Firm-specific lexicon r": 0.2719872810303237,
+   "Pooled lexicon r": 0.5105443908786637,
+   "Leave-one-firm-out lexicon r": 0.4800442083239073
+  },
+  {
+   "CompanyID": 62,
+   "Company": "Almarai Co.",
+   "n_test": 114,
+   "Firm-specific lexicon r": 0.16600913387981953,
+   "Pooled lexicon r": 0.28682289292987523,
+   "Leave-one-firm-out lexicon r": 0.2874727413954198
+  },
+  {
+   "CompanyID": 77,
+   "Company": "Saudi Basic Industries Corp.",
+   "n_test": 159,
+   "Firm-specific lexicon r": 0.07002795562074467,
+   "Pooled lexicon r": 0.38265664405499655,
+   "Leave-one-firm-out lexicon r": 0.3777280207860286
+  },
+  {
+   "CompanyID": 88,
+   "Company": "Yanbu National Petrochemical Co.",
+   "n_test": 106,
+   "Firm-specific lexicon r": -0.05656473598164923,
+   "Pooled lexicon r": 0.4194442157823218,
+   "Leave-one-firm-out lexicon r": 0.41280864095824255
+  },
+  {
+   "CompanyID": 585,
+   "Company": "Sahara International Petrochemical Co.",
+   "n_test": 127,
+   "Firm-specific lexicon r": 0.14531921638138232,
+   "Pooled lexicon r": 0.24213100302859233,
+   "Leave-one-firm-out lexicon r": 0.21244655065771642
+  },
+  {
+   "CompanyID": 600,
+   "Company": "Rabigh Refining and Petrochemical Co.",
+   "n_test": 83,
+   "Firm-specific lexicon r": 0.020735071444011984,
+   "Pooled lexicon r": 0.3174693333732786,
+   "Leave-one-firm-out lexicon r": 0.28652891837692707
+  },
+  {
+   "CompanyID": 836,
+   "Company": "Saudi Arabian Mining Co.",
+   "n_test": 151,
+   "Firm-specific lexicon r": 0.18585639809123478,
+   "Pooled lexicon r": 0.29865021624742677,
+   "Leave-one-firm-out lexicon r": 0.30905625922653224
+  },
+  {
+   "CompanyID": 3413,
+   "Company": "The Saudi National Bank",
+   "n_test": 180,
+   "Firm-specific lexicon r": 0.045653863036344215,
+   "Pooled lexicon r": 0.3620572183324658,
+   "Leave-one-firm-out lexicon r": 0.36092811540999586
+  }
+ ],
+ "transfer_means": {
+  "Firm-specific lexicon r": 0.09448630487063236,
+  "Pooled lexicon r": 0.3265369320549875,
+  "Leave-one-firm-out lexicon r": 0.31635841722251334
+ },
+ "trading": [
+  {
+   "Strategy": "Buy-and-hold, equal-weight 11 firms (open-to-close)",
+   "Annualised return": -0.3477587385915805,
+   "Annualised volatility": 0.17022932534741145,
+   "Sharpe": -2.0428838443779256,
+   "Max drawdown": -0.41065842338253444,
+   "Days in market": 248
+  },
+  {
+   "Strategy": "Long/cash on positive lexicon signal, no cost",
+   "Annualised return": -0.196329470198229,
+   "Annualised volatility": 0.22382432042844239,
+   "Sharpe": -0.8771587905300773,
+   "Max drawdown": -0.31341265997547885,
+   "Days in market": 226
+  },
+  {
+   "Strategy": "Long/cash, 10 bp round-trip cost",
+   "Annualised return": -0.42415205084339025,
+   "Annualised volatility": 0.22394774385073107,
+   "Sharpe": -1.8939777804866045,
+   "Max drawdown": -0.4130861926373389,
+   "Days in market": 226
+  },
+  {
+   "Strategy": "Long/cash, 25 bp round-trip cost",
+   "Annualised return": -0.7658859218111321,
+   "Annualised volatility": 0.2243024406986097,
+   "Sharpe": -3.414523352602464,
+   "Max drawdown": -0.5691210808949706,
+   "Days in market": 226
+  }
+ ]
+}

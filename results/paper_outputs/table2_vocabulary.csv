@@ -1,0 +1,5 @@
+Stage,Tokens,Vocabulary
+"Raw whitespace tokens (training documents, 11 firms, 2018-2021)",2208303,114083
+"After normalisation (diacritics, punctuation, alef/ya/ta-marbuta, digits -> NUM)",2582130,36078
+Regression vocabulary (document frequency >= 5),,13368
+Equal-split lexicon (>= 3 distinct days),,15206
